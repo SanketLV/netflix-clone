@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "../components-css/Row.css";
 import axios from "../axios";
+import { useRecoilState } from "recoil";
+import { modalState, movieState } from "../atoms/modalAtoms";
 
 function Row({ title, fetchUrl, isLargeRow = false }) {
   const [movies, setMovies] = useState([]);
@@ -17,12 +19,20 @@ function Row({ title, fetchUrl, isLargeRow = false }) {
   }, [fetchUrl]);
 
   // console.log(movies);
+  const [showModal, setShowModal] = useRecoilState(modalState);
+  const [currentMovie, setCurrentMovie] = useRecoilState(movieState);
 
   return (
     <div className="row">
-      <h2>{title}</h2>
+      <h2 className="font-bold text-2xl">{title}</h2>
 
-      <div className="row__posters">
+      <div
+        className="row__posters cursor-pointer"
+        onClick={() => {
+          setCurrentMovie(movies);
+          setShowModal(true);
+        }}
+      >
         {movies.map(
           (movie) =>
             ((isLargeRow && movie.poster_path) ||

@@ -1,5 +1,5 @@
 .banner {
-  height: 448px;
+  height: 97.5vh;
   position: relative;
   color: white;
   object-fit: contain;
@@ -8,22 +8,25 @@
 .banner__contents {
   margin-left: 30px;
   padding-top: 140px;
-  height: 190px;
+  height: 785px;
 }
 
 .banner__title {
+  padding-top: 540px;
   font-size: 3rem;
   font-weight: 800;
   padding-bottom: 0.3rem;
+  text-shadow: 0 0 5px black;
 }
 
 .banner__description {
   width: 45rem;
   line-height: 1.3;
   padding-top: 1rem;
-  font-size: 0.8rem;
-  max-width: 360px;
+  font-size: 1.1rem;
+  max-width: 760px;
   height: 80px;
+  text-shadow: 0 0 5px black;
 }
 
 .banner--fadeBottom {
