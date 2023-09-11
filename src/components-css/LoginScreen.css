@@ -7,13 +7,13 @@
 
 .loginScreen__body>h1 {
   font-size: 3.125rem;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .loginScreen__body>h2 {
   font-size: 2rem;
   font-weight: 400;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .loginScreen__body>h3 {
@@ -48,7 +48,7 @@
 .loginScreen__logo {
   position: fixed;
   left: 0;
-  width: 150px;
+  width: 170px;
   object-fit: contain;
   padding-left: 20px;
 }
@@ -57,7 +57,7 @@
   position: fixed;
   right: 20px;
   top: 20px;
-  padding: 10px 20px;
+  padding: 7px 20px;
   font-size: 1rem;
   color: #fff;
   background-color: #e50914;
@@ -70,7 +70,7 @@
 .loginScreen__input>form>input {
   padding: 10px;
   outline-width: 0;
-  height: 30px;
+  height: 55px;
   width: 30%;
   border: none;
   max-width: 600px;

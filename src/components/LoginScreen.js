@@ -14,7 +14,10 @@ function LoginScreen() {
           alt=""
         />
 
-        <button onClick={() => setSignIn(true)} className="loginScreen__button">
+        <button
+          onClick={() => setSignIn(true)}
+          className="loginScreen__button font-bold"
+        >
           Sign In
         </button>
 
@@ -25,7 +28,9 @@ function LoginScreen() {
           <SignupScreen />
         ) : (
           <>
-            <h1>Unlimited films, TV Programmes and more.</h1>
+            <h1 className="font-bold">
+              Unlimited films, TV Programmes and more.
+            </h1>
             <h2>Watch anywhere, Cancel at any time.</h2>
             <h3>
               Ready to watch ? Enter your email to create or restart your
@@ -34,7 +39,11 @@ function LoginScreen() {
 
             <div className="loginScreen__input">
               <form>
-                <input type="email" placeholder="Email Address" />
+                <input
+                  type="email"
+                  placeholder="Email Address"
+                  className="text-black"
+                />
                 <button
                   onClick={() => setSignIn(true)}
                   className="loginScreen__getStarted"

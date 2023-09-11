@@ -43,12 +43,14 @@ function SignupScreen() {
       <form>
         <h1>Sign In</h1>
         <input
+          className="text-black"
           ref={emailRef}
           type="email"
           placeholder="Email"
           autoComplete="on"
         />
         <input
+          className="text-black"
           ref={passwordRef}
           type="password"
           placeholder="Password"
